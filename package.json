@@ -1,0 +1,35 @@
+{
+  "name": "alfred-autosuggestions",
+  "version": "1.0.0",
+  "description": "Alfred autosuggestions workflow",
+  "main": "index.js",
+  "author": "Dremy <dremy@dremy.cn>",
+  "license": "MIT",
+  "private": false,
+  "keywords": [
+    "alfred",
+    "workflow",
+    "suggestion",
+    "autosuggestions"
+  ],
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc",
+    "postinstall": "alfy-init && alfred-config",
+    "preuninstall": "alfy-cleanup",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "alfred-config": "^0.2.2",
+    "alfy": "^0.11.0",
+    "lodash": "^4.17.21",
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "@tsconfig/node12": "^1.0.9",
+    "@types/lodash": "^4.14.170",
+    "@types/node": "^15.12.4",
+    "@types/node-fetch": "^2.5.10",
+    "typescript": "^4.3.4"
+  }
+}

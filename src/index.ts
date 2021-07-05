@@ -40,7 +40,7 @@ const outputConfig: OutputConfig = {
   try {
     const result = await fetch(url.replace('{query}', query), options).then(res => res.json())
 
-    const list = get(result, inputConfig, [])
+    const list = (inputConfig ? get(result, inputConfig, []) : result)
       .map((item: Record<string, any>) => ({
         title: '',
         subtitle: '',

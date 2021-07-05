@@ -1,6 +1,6 @@
 {
   "name": "alfred-autosuggestions",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Alfred autosuggestions workflow",
   "main": "index.js",
   "author": "Dremy <dremy@dremy.cn>",
